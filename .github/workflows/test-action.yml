@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Test State Labels Action
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7.0.1
       - name: Generate randomized test inputs
         id: generate
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
